@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <style>
+			:root{
+				background-color: grey;
+			}
+			fieldset{
+				border-color:white;
+				background-color: grey;
+				border-width: 30px;
+			}
+			textarea{
+				background-color: darkgrey;
+			}
+		 </style>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<!-- Your UI controls go here -->
+		<h1>Fancify my Text</h1>
+		<fieldset>
+			<label>Text</label><br>
+			<textarea id = "input" rows = 4 cols = 30></textarea>
+		</fieldset>
+		<fieldset>
+			<label>Fancify</label>
+			<form>
+				<input value = "Bigger!" type = "button" onclick = "hello()"><br>
+				<label>FancyShmancy:</label><br>
+				<input id = "FancyShmancy" onchange = "fancy()" value = "FancyShmancy" type = "radio"><br>
+				<label>BoringBetty:</label><br>
+				<input id = "BoringBetty" onchange = "boring()" value = "BoringBetty" type = "radio"><br>
+				<input id = "Moo" onclick = "moo()" value = "Moo" type = "button"><br>
+			</form>
+		</fieldset>
+	</body>
+</html>
